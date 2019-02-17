@@ -1,5 +1,5 @@
 import config from '@@config';
-import express from 'express';
+import expressApp from './expressApp';
 
 console.log('app launches with config:\n%o', config);
 
@@ -10,5 +10,7 @@ console.log('app launches with config:\n%o', config);
     foo: 111
   };
 
-  iota.send(data);
+  // iota.send(data);
+
+  expressApp();
 })();
