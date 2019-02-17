@@ -13,7 +13,7 @@ const seed =
 const address =
   'HELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLQD'
 
-const message = Converter.asciiToTrytes(JSON.stringify({ foo: "bar"}))
+const message = Converter.asciiToTrytes(JSON.stringify({ foo: "bar" }));
 
 const transfers = [
   {
