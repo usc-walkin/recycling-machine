@@ -3,8 +3,9 @@ module.exports = {
     [
       "module-resolver", {
         "alias": {
+          '@@modules': './src/modules',
         },
-      }
+      },
     ],
     // Stage 2
     ["@babel/plugin-proposal-decorators", { "legacy": true }],
