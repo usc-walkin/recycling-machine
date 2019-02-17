@@ -16,7 +16,7 @@ module.exports = {
     "@babel/plugin-proposal-throw-expressions",
 
     // Stage 3
-    "@babel/plugin-syntax-dynamic-import",
+    'dynamic-import-node',
     "@babel/plugin-syntax-import-meta",
     ["@babel/plugin-proposal-class-properties", { "loose": false }],
     "@babel/plugin-proposal-json-strings"
@@ -27,6 +27,6 @@ module.exports = {
         node: '8.11',
       },
     }],
-    "@babel/preset-typescript"
+    "@babel/preset-typescript",
   ]
 };
