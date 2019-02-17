@@ -1,3 +1,4 @@
+import * as bodyParser from "body-parser";
 import cors from 'cors';
 import express from 'express';
 
@@ -8,13 +9,21 @@ function createExpressApp() {
   const port = config.expressPort;
 
   const app = express();
+  app.use(bodyParser.urlencoded({ extended: true }));
+  app.use(bodyParser.json());
   app.use(cors());
   app.use(httpLogger);
 
-  app.use('/' , (req, res, next) => {
+  app.use('/send' , (req, res, next) => {
+    const data = req.body;
+
     res.send({
-      foo: 'power',
+      requestData: data,
     });
+  });
+
+  app.use((err, req, res, next) => {
+    console.error('Error has occurred: %s', err);
   });
 
   app.listen(port, () => {
