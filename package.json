@@ -22,6 +22,7 @@
     "@iota/core": "^1.0.0-beta.8",
     "@iota/mam": "^0.5.0",
     "@types/node": "^11.9.4",
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "chalk": "^2.4.2",
     "cors": "^2.8.5",

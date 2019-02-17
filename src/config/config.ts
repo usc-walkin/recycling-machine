@@ -1,8 +1,6 @@
 const config = {
-  address: 'XRUHBDGYBYQO9IXXTPTJWKQOCMKLOFUTTARNS9DJN99SAQMFKVKFFFJWCCVZS9DWQYGZNFFBCEKKFPAGD',
   expressPort: 5123,
-  provider: 'https://nodes.devnet.thetangle.org:443',
-  seed: 'BGBLSNZFLKNXZRCXERDNSRBHMSUULSDTRPTSVPX9XOQXZZYHIIGZREGLS9VCKTKP9VBDYFZQGLHPNEKKZ',
+  operatorEndpoint: 'http://localhost:5122',
 };
 
 export default config;
