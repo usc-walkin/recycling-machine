@@ -9,6 +9,9 @@
     "moduleResolution": "node",
     "noEmit": true,
     "paths": {
+      "@@config": [
+        "src/config/config" 
+      ],
       "@@modules/*": [
         "src/modules/*" 
       ],
