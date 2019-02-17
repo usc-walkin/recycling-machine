@@ -4,6 +4,7 @@ module.exports = {
       "module-resolver", {
         "alias": {
           '@@config': './src/config/config',
+          '@@middlewares': './src/middlewares',
           '@@modules': './src/modules',
         },
       },
