@@ -1,5 +1,6 @@
 import axios from 'axios';
 import * as bodyParser from "body-parser";
+import chalk from 'chalk';
 import cors from 'cors';
 import express from 'express';
 
@@ -16,9 +17,12 @@ function createExpressApp() {
   app.use(httpLogger);
 
   app.use('/run' , async (req, res, next) => {
+    console.log(`${chalk.green('Scanned')} the product, sku: %s`, 7514000502);
+
     axios.post(`${config.operatorEndpoint}/recycle`, req.body)
       .then(({ data }) => {
-        console.log('axios succeeds', data);
+        console.log(`${chalk.green('Axios')} succeeds`, data);
+
         res.send({
           error: false,
           result: data.result,
